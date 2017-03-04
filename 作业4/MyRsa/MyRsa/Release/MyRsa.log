@@ -1,0 +1,16 @@
+﻿生成启动时间为 6/28/2016 22:07:23。
+     1>项目“C:\Users\asus\Desktop\密码学\作业4\MyRsa\MyRsa\MyRsa.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\Visual studio\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt MyRsa.c
+         MyRsa.c
+     1>MyRsa.c(145): warning C4013: “MD5”未定义；假设外部返回 int
+       Link:
+         D:\Visual studio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\asus\Desktop\密码学\作业4\MyRsa\Release\MyRsa.exe" /INCREMENTAL:NO /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"D:\Visual studio\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"C:\Users\asus\Desktop\密码学\作业4\MyRsa\Release\MyRsa.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\asus\Desktop\密码学\作业4\MyRsa\Release\MyRsa.lib" /MACHINE:X86 /SAFESEH Release\MyRsa.obj
+         正在生成代码
+         已完成代码的生成
+         MyRsa.vcxproj -> C:\Users\asus\Desktop\密码学\作业4\MyRsa\Release\MyRsa.exe
+     1>已完成生成项目“C:\Users\asus\Desktop\密码学\作业4\MyRsa\MyRsa\MyRsa.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:03.17

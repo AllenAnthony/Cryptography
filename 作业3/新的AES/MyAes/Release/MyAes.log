@@ -1,0 +1,8 @@
+﻿生成启动时间为 5/29/2016 20:46:31。
+     1>项目“C:\Users\asus\Desktop\密码学\作业3\新的AES\MyAes\MyAes.vcxproj”在节点 2 上(Build 个目标)。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(369,5): error MSB8031: Building an MFC project for a non-Unicode character set is deprecated. You must change the project property to Unicode or download an additional library. See http://go.microsoft.com/fwlink/p/?LinkId=286820 for more information.
+     1>已完成生成项目“C:\Users\asus\Desktop\密码学\作业3\新的AES\MyAes\MyAes.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.03

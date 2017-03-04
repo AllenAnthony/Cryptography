@@ -1,0 +1,40 @@
+Plugboard: 无
+RotorNum: 543(5为左边齿轮，3为右边齿轮)
+RingSetting: DAB(D为左边齿轮设置，B为右边齿轮设置)
+MessageKey: ???
+CypherText: HBLHGWKRPMXKYLKYOHTCPXZATVPPDBZBEXKTZVGEDUYYDJT
+已知PlainText中一定有"HITLER"
+求破解MessageKey及PlainText
+
+注意事项:
+(1)作业必须用纯C写, 不得使用C++语法
+(2)用VC6写程序，建立工程时请选择File->New->Projects->Win32 Console Application,
+   不需要图形界面
+(3)假定MessageKey=XXX, PlainText="YYY", 则程序输出格式如下:
+   MessageKey=XXX
+   PlainText=YYY
+(4)Plugboard, RotorNum, RingSetting因为是固定死的, 所以用不着输入, 直接赋值给变量即可
+(5)vc6工程保存到以"学号姓名"命名的目录内，再把该目录打包压缩成
+   "学号姓名.rar"，并上传到以下ftp:
+   ftp://bhhcrypt:bhhcrypt@10.71.45.100/作业01
+
+ABCDEFGHIJ  K  L  M  N  O  P  Q  R  S  T  U  V  W  X  Y  Z
+0123456789  10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25
+
+const char Rotor3_1[27] = "BDFHJLCPRTXVZNYEIWGAKMUSQO";
+const char Rotor3_2[27] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+const char Rotor4_1[27] = "ESOVPZJAYQUIRHXLNFTGKDCMWB";
+const char Rotor4_2[27] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+const char Rotor5_1[27] = "VZBRGITYUPSDNHLXAWMJQOFECK";
+const char Rotor5_2[27] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+const char Reflect_1[27] = "YRUHQSLDPXNGOKMIEBFZCWVJAT";
+const char Reflect_2[27] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+
+
+KIT
+
+adolf hitlers enigma machine was cracked by alan turing

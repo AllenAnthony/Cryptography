@@ -1,0 +1,46 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ecc - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "D:\DOCUME~1\BLACKW~1\LOCALS~1\Temp\RSP39.tmp" with contents
+[
+/nologo /ML /W3 /GX /ZI /Od /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/ecc.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"D:\VC\ecc\ecc.cpp"
+]
+Creating command line "cl.exe @D:\DOCUME~1\BLACKW~1\LOCALS~1\Temp\RSP39.tmp" 
+Creating temporary file "D:\DOCUME~1\BLACKW~1\LOCALS~1\Temp\RSP3A.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/ecc.pdb" /debug /machine:I386 /out:"Debug/ecc.exe" 
+.\Debug\ecc.obj
+.\Debug\StdAfx.obj
+]
+Creating command line "link.exe @D:\DOCUME~1\BLACKW~1\LOCALS~1\Temp\RSP3A.tmp"
+<h3>Output Window</h3>
+Compiling...
+ecc.cpp
+D:\VC\ecc\ecc.cpp(102) : warning C4101: 'bufout' : unreferenced local variable
+D:\VC\ecc\ecc.cpp(105) : warning C4101: 'ciphertext_len' : unreferenced local variable
+D:\VC\ecc\ecc.cpp(103) : warning C4101: 'hex' : unreferenced local variable
+D:\VC\ecc\ecc.cpp(101) : warning C4101: 'bufin' : unreferenced local variable
+D:\VC\ecc\ecc.cpp(100) : warning C4101: 'ciphertext' : unreferenced local variable
+D:\VC\ecc\ecc.cpp(224) : warning C4101: 'bufout' : unreferenced local variable
+D:\VC\ecc\ecc.cpp(227) : warning C4101: 'ciphertext_len' : unreferenced local variable
+D:\VC\ecc\ecc.cpp(225) : warning C4101: 'hex' : unreferenced local variable
+D:\VC\ecc\ecc.cpp(223) : warning C4101: 'bufin' : unreferenced local variable
+D:\VC\ecc\ecc.cpp(222) : warning C4101: 'ciphertext' : unreferenced local variable
+D:\VC\ecc\ecc.cpp(344) : warning C4101: 'bufout' : unreferenced local variable
+D:\VC\ecc\ecc.cpp(343) : warning C4101: 'bufin' : unreferenced local variable
+D:\VC\ecc\ecc.cpp(342) : warning C4101: 'ciphertext' : unreferenced local variable
+Linking...
+
+
+
+<h3>Results</h3>
+ecc.exe - 0 error(s), 13 warning(s)
+</pre>
+</body>
+</html>

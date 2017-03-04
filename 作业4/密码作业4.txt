@@ -1,0 +1,36 @@
+1. 假定已定义RSA的参数如下:
+#define N "FF807E694D915875B13F47ACDDA61CE11F62E034150F84660BF34026ABAF8C37"
+#define E "010001"
+#define D "45AEF3CB207EAD939BBDD87C8B0F0CFCC5A366A5AF2AC5FE1261D7547C625F51"
+
+2. 用RSA算法加密(使用公钥E)以下字符串并解密(使用私钥D):
+unsigned char plaintext[] = 
+   "01. A quick brown fox jumps over the lazy dog.\n" \"02. A quick brown fox jumps over the lazy dog.\n" \"03. A quick brown fox jumps over the lazy dog.\n";
+
+加密及解密使用CBC模式, 其中初始向量IV定义如下:
+   unsigned char IV[] = "0123456789ABCDEFDEADBEEFBADBEAD!";
+加密时的明文块字节长度必须等于N的字节长度, 若最后一个明文块
+的长度小于N的长度, 则应该使用ciphertext stealing方式加密最后
+一块及倒数第二块。
+
+3. 用MD5算法及SHA-1算法分别求出plaintext的hash值,设为M1及M2,
+   把128位的M1及160位的M2按从左到右顺序合并成288位的M, 
+
+   用私钥D对M签名生成M'; 由于N只有256位, 故签名要分两次进行, 即
+   要对M的前256位及后32位分别加密 , 加密使用ECB ciphertext 
+   stealing方式; 用公钥E解密M', 并验证解密结果是否等于M。
+
+4. RSA、MD5、SHA-1可以调用Openssl库函数也可以自己写; 整个程
+   序用VC6工程实现，工程名设为MyRsa。
+   
+5. 把MyRsa文件夹重命名为"学号姓名", 用WinRar压缩成"学号姓名.rar",
+   上传到以下ftp:
+   ftp://bhhcrypt:bhhcrypt@10.71.45.100/作业04
+
+
+1.	随机选择两个不等素数p和q。
+2.	计算出n=p*q。
+3.	选择一个数e使它和(p-1)(q-1)互素。
+4.	计算e在模(p-1)(q-1)的逆元d。
+5.	公开 (e,n)作为RSA公钥。
+6.	保留 (d,n)作为RSA私钥。
